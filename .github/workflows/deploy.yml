@@ -23,6 +23,12 @@ jobs:
 
       - name: Build React app
         run: npm run build
+      - name: Configure Git user
+        run: |
+          git config user.name nighat-parveen
+          git config user.email nikkie0173@gmail.com
+
+    
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
